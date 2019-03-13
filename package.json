@@ -1,0 +1,63 @@
+{
+  "name": "avio",
+  "version": "0.1.0",
+  "private": true,
+  "main": "gulpfile.js",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">1%",
+    "not dead",
+    "IE 10"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.26.0",
+    "clean-css": "^4.1.7",
+    "cookie-parser": "^1.4.3",
+    "css-clean": "^2.2.5",
+    "css-mqpacker": "^7.0.0",
+    "del": "^2.2.2",
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "husky": "^0.14.3",
+    "jsonwebtoken": "^8.3.0",
+    "lint-staged": "^7.3.0",
+    "lodash": "^4.17.10",
+    "prettier": "^1.14.3",
+    "prop-types": "^15.6.2",
+    "raf": "^3.3.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-devtools": "^3.4.1",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0",
+    "run-sequence": "^1.2.2",
+    "stylelint": "^7.13.0",
+    "stylelint-config-standard": "^16.0.0",
+    "uglify-js": "^3.0.25",
+    "webpack-cli": "^3.1.2"
+  },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
