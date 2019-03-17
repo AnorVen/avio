@@ -10,17 +10,16 @@ app.get('/', function(req, res) {
 app.use(cors());
 
 app.get('/api/test', (req, res) => {
-	console.log(req.query);
-	console.log(res.query);
 	axios
 		.get(`https://api.rasp.yandex.net/v3.0/schedule/?`, {
 			params: req.query,
 		})
 		.then(response => {
+			console.log('ser ok');
 			res.send(response.data);
 		})
 		.catch(error => {
-			console.log(error);
+			console.log(`error: ${error.text}`);
 		});
 });
 
